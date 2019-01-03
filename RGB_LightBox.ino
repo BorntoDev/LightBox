@@ -12,7 +12,7 @@ void setup() {
 
   for (int i = 0; i < NUM_LEDS; i++){
     leds[i] = CHSV(20,255,255);
-    oldColor[i] = 32;
+    oldColor[i] = 20;
   }
   for (int i = 38; i < 45; i++){
     leds[i] = CHSV(0,255,255);
@@ -26,7 +26,6 @@ void setup() {
 
 void loop() {
   setLedFlame(0,5);
-  //setLedFlame(16,19);
   setLedFlame(45,59);
   FastLED.show();
   delay(50); 
